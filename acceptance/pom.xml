@@ -7,9 +7,9 @@
         <artifactId>rest-skeleton</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-
     <modelVersion>4.0.0</modelVersion>
-    <name>Acceptance tests</name>
+    <packaging>jar</packaging>
+    <name>Acceptance Tests</name>
     <artifactId>acceptance</artifactId>
 
     <dependencies>
@@ -39,6 +39,7 @@
                         <version>1.5.6.RELEASE</version>
                         <configuration>
                             <fork>true</fork>
+                            <executable>true</executable>
                             <mainClass>skeleton.api.Application</mainClass>
                             <arguments>
                                 <argument>--server.port=${server.port}</argument>

@@ -1,6 +1,13 @@
-Feature: Health check api
+Feature: Application Health Check
 
-    Scenario: Application is up and running
-        Given the application is up and running
-        When I send a request to the health endpoint
-        Then I should get a successful response
+  @e2e @smoke
+  Scenario: Health check monitors application state
+      Given the application is up and running
+      When I request the health status
+      Then the application should be healthy
+
+  @e2e
+  Scenario: Health check monitors application state
+    Given the application is up and running
+    When I request the health status
+    Then the application should be healthy

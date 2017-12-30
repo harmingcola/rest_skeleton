@@ -1,0 +1,11 @@
+// Build
+mvn clean install
+
+// Start application on port
+mvn clean install -f api/pom.xml spring-boot:run -Dserver.port=9005
+
+// Run tagged acceptance tests
+mvn clean install -f acceptance/pom.xml -Pacceptance -Dcucumber.options="--tags @smoke"
+
+// Run all acceptance tests
+mvn clean install -f acceptance/pom.xml -Pacceptance

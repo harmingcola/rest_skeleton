@@ -11,13 +11,12 @@
         <module>api</module>
         <module>model</module>
         <module>acceptance</module>
-        <module>performance</module>
         <module>service</module>
         <module>dao</module>
     </modules>
     <packaging>pom</packaging>
 
-    <name>Bleeding Edge Skeleton</name>
+    <name>Rest Skeleton Java</name>
     <description>Skeleton project for a rest service</description>
 
     <properties>
@@ -31,14 +30,14 @@
         <commons.logging.version>1.2</commons.logging.version>
         <cucumber.version>1.2.4</cucumber.version>
         <gatling.version>2.2.5</gatling.version>
-        <groovy.version>2.0.0</groovy.version>
+        <groovy.version>2.4.13</groovy.version>
         <http.client.version>4.4.1</http.client.version>
         <jackson.version>2.9.0</jackson.version>
         <lombok.version>1.16.4</lombok.version>
         <objenesis.version>2.1</objenesis.version>
-        <spock.version>1.0-groovy-2.0</spock.version>
+        <spock.version>1.0-groovy-2.4</spock.version>
         <spring.version>4.3.10.RELEASE</spring.version>
-        <spring.boot.version>1.2.6.RELEASE</spring.boot.version>
+        <spring.boot.version>1.5.9.RELEASE</spring.boot.version>
 
         <!-- Plugin Versions -->
         <gatling-plugin.version>2.2.4</gatling-plugin.version>
